@@ -3,11 +3,14 @@ package com.devsuperior.bds04.dto;
 import java.io.Serializable;
 
 import com.devsuperior.bds04.entities.City;
+import com.devsuperior.bds04.services.validation.CityInsertValid;
 
+@CityInsertValid
 public class CityDTO implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
 	private Long id;
+	
 	private String name;
 	
 	public CityDTO() {
